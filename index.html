@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="icono-biblia.ico">
     <title>Biblia Cristiana - Inicio</title>
     <style>
         body {
@@ -36,13 +37,40 @@
             transform: scale(1.05);
             background: #34495e;
         }
+        .contenedor-boton {
+            display: flex;          /* Activa el modo flexible */
+            flex-wrap: wrap;       /* Si no caben, saltan de línea automáticamente */
+            justify-content: center; /* Los centra horizontalmente */
+            gap: 10px;             /* Crea un espacio uniforme entre ellos (adiós botones pegados) */
+            max-width: 800px;      /* Ajusta esto según el ancho de tu card blanca */
+            margin: 20px auto;     /* Los separa del texto de arriba y los centra */
+        }
+
+        .contenedor-boton button {
+            flex: 1 1 150px;       /* Esto hace que todos intenten medir lo mismo (mínimo 150px) */
+            max-width: 200px;      /* Evita que se estiren demasiado si hay pocos botones */
+            padding: 10px;         /* Espacio interno para que se vean cómodos */
+            /* Aquí puedes añadir tus estilos de color y bordes que ya tienes */
+        }
     </style>
+    
 </head>
 <body>
     <div class="card">
         <h1>Biblia Cristiana</h1>
         <p>Esta biblia aún está en desarrollo. Por ahora puedes explorar Proverbios.</p>
-        <button onclick="window.location.href='proberbios1.html'">Ir al Capítulo 1</button>
+        <div class="contenedor-boton">
+            <button onclick="window.location.href='proberbios1.html'">Ir al Capítulo 1</button>
+            <button onclick="window.location.href='proberbios2.html'">Ir al Capítulo 2</button>
+            <button onclick="window.location.href='proberbios3.html'">Ir al Capítulo 3</button>
+            <button onclick="window.location.href='proberbios4.html'">Ir al Capítulo 4</button>
+            <button onclick="window.location.href='proberbios5.html'">Ir al Capítulo 5</button>
+            <button onclick="window.location.href='proberbios6.html'">Ir al Capítulo 6</button>
+            <button onclick="window.location.href='proberbios7.html'">Ir al Capítulo 7</button>
+            <button onclick="window.location.href='proberbios8.html'">Ir al Capítulo 8</button>
+            <button onclick="window.location.href='proberbios9.html'">Ir al Capítulo 9</button>
+            <button onclick="window.location.href='proberbios10.html'">Ir al Capítulo 10</button>
+        </div>
     </div>
 </body>
 </html>
